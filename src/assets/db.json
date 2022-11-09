@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "andreibuzas@yahoo.com",
+      "password": "1234",
+      "name": "andrei",
+      "id": 1
+    },
+    {
+      "email": "andreibuzas@yahoo.com",
+      "password": "1234",
+      "name": "andrei",
+      "id": 2
+    }
+  ]
+}
