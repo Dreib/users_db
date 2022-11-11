@@ -15,7 +15,7 @@
     margin: 0;
   }
 
-  .register input, .login input {
+  .register input, .login input, .edit input {
     width: 300px;
     height: 30px;
     padding-left: 20px;
@@ -26,7 +26,7 @@
     border: 1px solid skyblue;
   }
 
-  .register button, .login button {
+  .register button, .login button, .edit button {
     width: 320px;
     height: 40px;
     border: 1px solid skyblue;

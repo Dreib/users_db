@@ -1,4 +1,5 @@
 <template>
+  <NavHeader/>
   <img id="logo" alt="Vue logo" src="../assets/logo.png">
   <h1>Login</h1>
 
@@ -11,10 +12,11 @@
 
 <script>
   import Axios from 'axios'
+  import NavHeader from "@/components/NavHeader";
 
   export default {
     name: 'LoginPage',
-
+    components: {NavHeader},
     data() {
       return {
         email: '',
@@ -28,7 +30,7 @@
 
         console.log(result);
 
-        if(result.status == 200) {
+        if(result.status === 200) {
           localStorage.setItem("user-info", JSON.stringify(result.data[0]));
           await this.$router.push({name: 'HomePage'});
         }
@@ -36,18 +38,19 @@
     },
 
     //lifecycle method
-    /*mounted() {
-      let user = localStorage.getItem("user-info");
+    mounted() {
+      /*let user = localStorage.getItem("user-info");
 
       if(user) {
         this.$router.push({name: 'HomePage'});
-      }
-    }*/
+      }*/
+    }
   }
 </script>
 
 <style>
   #logo {
     width: 100px;
+    padding-top: 30px;
   }
 </style>

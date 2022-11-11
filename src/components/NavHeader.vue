@@ -1,9 +1,8 @@
 <template>
   <div class="nav">
-    <a href="#">Home</a>
-    <a href="#">Login</a>
-    <a href="#">Sign up</a>
-    <a href="#">Edit user</a>
+    <router-link to="/">Home</router-link>
+    <router-link to="/login">Login</router-link>
+    <router-link to="/signup">Sign up</router-link>
     <a v-on:click="logout" href="#">Logout</a>
   </div>
 </template>
