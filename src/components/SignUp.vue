@@ -45,11 +45,11 @@
 
     //lifecycle method
     mounted() {
-      /*let user = localStorage.getItem("user-info");
+      let user = localStorage.getItem("user-info");
 
       if(user) {
         this.$router.push({name: 'HomePage'});
-      }*/
+      }
     }
   }
 </script>
